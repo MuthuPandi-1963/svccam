@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playing Around With The CSS Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Playing Around With The CSS Box Model</h1>
+
+    <div class="container">
+
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+        <div class="box box6">Box 6</div>
+        <div class="box box7">Box 7</div>
+        <div class="box box8">Box 8</div>
+        <div class="box box9">Box 9</div>
+
+    </div>
+
+</body>
+</html>
+body {
+    background-color: #e6b785;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+}
+
+/* Common Box Style */
+.box {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #000;
+    padding: 10px;
+    position: absolute;
+    font-weight: bold;
+}
+
+/* Individual Box Positions & Colors */
+
+.box1 {
+    background: gray;
+    top: 50px;
+    left: 50px;
+}
+
+.box2 {
+    background: yellow;
+    top: 170px;
+    left: 150px;
+}
+
+.box3 {
+    background: #ddd;
+    top: 300px;
+    left: 250px;
+}
+
+.box4 {
+    background: red;
+    top: 200px;
+    left: 380px;
+}
+
+.box5 {
+    background: green;
+    top: 80px;
+    left: 500px;
+}
+
+.box6 {
+    background: blue;
+    top: 200px;
+    left: 620px;
+}
+
+.box7 {
+    background: turquoise;
+    top: 330px;
+    left: 720px;
+}
+
+.box8 {
+    background: lime;
+    top: 200px;
+    left: 850px;
+}
+
+.box9 {
+    background: magenta;
+    top: 70px;
+    left: 950px;
+}

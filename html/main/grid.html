@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            padding: 10px;
+            border: 0.5px solid gray;
+            /* width: fit-content; */
+        }
+        .container{
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-rows: repeat(3,60px);
+            /* justify-content: center; */
+            border: 2px solid blue;
+            /* align-content: center; */
+            /* place-content: center; */
+            place-content:end end;
+            /* gap: 10px; */
+            /* justify-items: center;
+            justify-items: end;
+            justify-items: start;
+            justify-items: stretch;
+            align-items: center;
+            align-items: end;
+            align-items: start;
+            align-items: stretch;
+            place-items: center; */
+
+
+        }
+        #content-4{
+            /* justify-self: center; */
+            place-self: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.content*9#content-$>{box-$} -->
+    <div class="container">
+        <div class="content" id="content-1">box-1</div>
+        <div class="content" id="content-2">box-2</div>
+        <div class="content" id="content-3">box-3</div>
+        <div class="content" id="content-4">box-4</div>
+        <div class="content" id="content-5">box-5</div>
+        <div class="content" id="content-6">box-6</div>
+        <div class="content" id="content-7">box-7</div>
+        <div class="content" id="content-8">box-8</div>
+        <div class="content" id="content-9">box-9</div>
+    </div>
+</body>
+</html>

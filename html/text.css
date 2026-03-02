@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Box Model Practice</title>
+
+<style>
+body {
+  margin: 0;
+  background: #e8b987; /* light beige */
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 32px;
+}
+
+.container {
+  position: relative;
+  height: 600px;
+  margin-top: 40px;
+}
+
+/* Common box style */
+.box {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+  font-weight: bold;
+  border: 3px solid rgba(0,0,0,0.2);
+}
+
+/* Individual box positions + colors */
+
+.box1 {
+  background: gray;
+  left: 80px;
+  top: 40px;
+}
+
+.box2 {
+  background: yellow;
+  left: 200px;
+  top: 160px;
+}
+
+.box3 {
+  background: #ddd;
+  left: 320px;
+  top: 260px;
+}
+
+.box4 {
+  background: red;
+  left: 450px;
+  top: 150px;
+}
+
+.box5 {
+  background: green;
+  left: 580px;
+  top: 40px;
+}
+
+.box6 {
+  background: blue;
+  left: 700px;
+  top: 160px;
+  color: white;
+}
+
+.box7 {
+  background: #20cfd1;
+  left: 820px;
+  top: 260px;
+}
+
+.box8 {
+  background: lime;
+  left: 940px;
+  top: 150px;
+}
+
+.box9 {
+  background: magenta;
+  left: 1060px;
+  top: 40px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Playing Around With The CSS Box Model</h1>
+
+<div class="container">
+  <div class="box box1">Box 1</div>
+  <div class="box box2">Box 2</div>
+  <div class="box box3">Box 3</div>
+  <div class="box box4">Box 4</div>
+  <div class="box box5">Box 5</div>
+  <div class="box box6">Box 6</div>
+  <div class="box box7">Box 7</div>
+  <div class="box box8">Box 8</div>
+  <div class="box box9">Box 9</div>
+</div>
+
+</body>
+</html>

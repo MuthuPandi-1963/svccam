@@ -1,0 +1,33 @@
+h1{
+    color: blue;
+}
+
+#heading{
+    background-color: green;
+}
+
+.content{
+    text-decoration: underline;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading ,  .content , h2 , .main p{
+    border: 2px solid red;
+}
+button{
+    padding: 4px 20px;
+    background-color: transparent;
+    border-radius: 2px;
+    border: none;
+}
+button[type="submit"]{
+    background-color: royalblue;
+}
+button[type="button"]{
+    background-color: green;
+}
+button[type="reset"]{
+    background-color: red;
+}

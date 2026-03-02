@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<form>
+        <div>
+        <label for="un">Username</label>
+        <input id="un" type="text" required placeholder="Enter a name">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter a Email" required>
+    </div>
+    <div>
+        <label for="Number">Number</label>
+        <input id="Number" type="number" disabled placeholder="Enter a Phone Nummber" required min="0" max="10">
+    </div>
+    <div>
+        <label name="" for="Password">Password</label>
+        <input id="Password" type="password" placeholder="Enter a Password" required minlength="8">
+    </div>
+     <div>
+         <input id="male" name="Gender" type="radio">
+        <label for="male">Male</label>
+         <input id="Female" name="Gender" type="radio">
+        <label for="Female">Female</label>
+    </div>
+    <div>
+        <input type="checkbox" name="" id="term" required >
+        <label for="term">Accept Terms and Condition</label>
+    </div>
+   <div class="">
+     <input type="file" name="" id="image" hidden>
+    <label for="image">Select a Picture</label>
+   </div>
+   <div class="">
+       <label for="date">  DOB</label>
+     <input type="date" name="" id="dob">
+   </div>
+   <select name="" id="">Skills
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="Java">Java</option>
+    <option value="JS">JS</option>
+   </select>
+   <textarea name="" id="" cols="30" rows="5"></textarea>
+    <button type="submit">Login</button>
+    <button type="button">btn</button>
+    <button type="reset">Reset</button>
+</form>
+
+
+</body>
+
+</html>
