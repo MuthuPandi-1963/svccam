@@ -30,3 +30,38 @@
   border-radius: 6px;
   padding: 8px 0;
 }
+
+.form {
+  display: grid;
+  height: 100dvh;
+  place-content: center;
+  box-shadow:  0 0 10px aqua;
+  row-gap: 20px;
+  
+
+}
+.form-input{
+  width: 400px;
+  display: grid;
+  row-gap: 10px;
+  margin: 10px;
+}
+.form-input input{
+  border: none;
+  border-bottom: 2px solid aqua;
+  outline: none;
+}
+.form-input label span {
+  color: red;
+}
+
+.dark{
+  background-color: black;
+  color: white;
+  height: 100dvh;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
