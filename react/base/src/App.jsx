@@ -106,13 +106,22 @@ import { useState } from "react";
 // }
 
 
+// import React from 'react'
+// import TodoList from "./components/TodoList";
+
+// export default function App() {
+//   return (
+//     <div>
+//       <TodoList/>
+//     </div>
+//   )
+// }
+
 import React from 'react'
-import TodoList from "./components/TodoList";
+import Signup from "./components/Signup";
 
 export default function App() {
   return (
-    <div>
-      <TodoList/>
-    </div>
+    <div><Signup/></div>
   )
 }

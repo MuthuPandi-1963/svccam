@@ -1,5 +1,5 @@
 export default function InputProp(
-    { id, name, type, placeholder, mantatory }
+    { id, name, type, placeholder, mantatory ,value,onChange}
 ) {
     return (
         <div className="form-input">
@@ -11,6 +11,7 @@ export default function InputProp(
                 type={type}
                 name={name.toLowerCase()}
                 id={id}
+                onChange={onChange}
                 placeholder={placeholder} />
         </div>
     )
