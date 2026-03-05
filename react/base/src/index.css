@@ -65,3 +65,29 @@
   background-color: white;
   color: black;
 }
+
+.todo-list {
+  display: grid;
+  margin:20px 10%;
+  row-gap: 10px;
+}
+.todo-form button ,.todo-list button {
+  width: 100%;
+  border: none;
+  box-shadow: 0 0 10px gray;
+  background-color: royalblue;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.todo-list #todo {
+  background-color: transparent;
+}
+.todo-form input{
+  width: 100%;
+  margin: 10px;
+}
+#todo{
+  display: flex;
+  justify-content: space-between;
+}
