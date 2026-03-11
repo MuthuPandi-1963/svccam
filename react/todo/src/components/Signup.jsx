@@ -1,7 +1,6 @@
 import { useState } from "react";
 import InputProp from "./Input";
 import axios from "axios";
-import {v7} from 'uuid'
 const staticFormData = {
     id : 0,
     name : "",
