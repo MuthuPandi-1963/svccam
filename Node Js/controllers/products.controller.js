@@ -1,43 +1,32 @@
-let products = [
-    {
-        id : 1 ,
-        name : "Lenovo Legion",
-        des : "NA"
-    },
-    {
-        id : 2 ,
-        name : "MI ",
-        des : "NA"
-    },
-]
+import { productModel } from "../models/products.model.js"
 
-export const createProduct = (req,res)=>{
-    const {id,name,des} = req.body
+export const createProduct =async (req,res)=>{
+    const {name,des} = req.body
     const newProduct = {
-        // id : id 
-        id ,
         name,
         des
     }
-    products.push(newProduct) 
+    // products.push(newProduct) 
+   await productModel.create(newProduct)
     return res.json({
         message : "products Added  Successfully",
         data : newProduct
     })
 }
 
-export const getProducts = (req,res)=>{
+export const getProducts = async(req,res)=>{
+    const products = await productModel.find()
     return res.json({
         message : "products Fetched  Successfully",
         data : products
     })
 }
 
-export const getProductById = (req,res)=>{
+export const getProductById =async (req,res)=>{
     const id = req.params.id
-    const findProduct = products.filter((val)=>val.id == id)
+    const findProduct = await productModel.findById(id)
 
-    if(findProduct.length > 0){
+    if(findProduct){
         return res.json({
             message : "products Fetched  Successfully",
             data : findProduct
@@ -49,18 +38,12 @@ export const getProductById = (req,res)=>{
     }
 }
 
-export const updateProductById = (req,res)=>{
+export const updateProductById = async (req,res)=>{
     const id = req.params.id
     const newData = req.body
-    const findProduct = products.filter(val=>val.id == id)
+    const findProduct = await productModel.findByIdAndUpdate(id,newData)
     
-    if(findProduct.length > 0){
-        products.forEach((val)=>{
-        if(val.id == id){
-            val.name = newData.name ??val.name
-            val.des = newData.des ??val.des
-        }
-    })
+    if(findProduct){
     return res.json({
         message : "products updated  Successfully",
         data : findProduct
@@ -72,15 +55,13 @@ export const updateProductById = (req,res)=>{
     }
 }
 
-export const deleteProductsById = (req,res)=>{
+export const deleteProductsById =async (req,res)=>{
     const id = req.params.id
-    const findProduct = products.filter((val)=>val.id == id)
+    const findProduct = await productModel.findByIdAndUpdate(id)
 
-    if(findProduct.length > 0){
-        products = products.filter((val)=>val.id != id)
+    if(findProduct){
         return res.json({
-            message : "products Deleted  Successfully",
-            data : findProduct
+            message : "products Deleted  Successfully"
         })
     }else{
         return res.json({
