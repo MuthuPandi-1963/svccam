@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body {
+  background: lavender;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: purple;
+}
+
+.search-box input {
+  width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid lavenderblush;
+}
+
+.nav-icons span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+.bottom-navbar {
+  display: flex;
+  gap: 25px;
+  padding: 12px 30px;
+  background: white;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  overflow-x: auto;
+}
+
+.bottom-navbar a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  white-space: nowrap;
+  padding-bottom: 5px;
+}
+
+
+.bottom-navbar a.active {
+  color: purple;
+  border-bottom: 2px solid purple;
+  font-weight: bold;
+}
+
+
+.bottom-navbar a:hover {
+  color: purple;
+}
+
+
+.categories {
+  display: flex;
+  gap: 15px;
+  padding: 15px 15px;
+  border: none;
+}
+
+.cat {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.cat img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.cat p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+.products-section {
+  padding: 20px 30px;
+}
+
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  font-size: 22px;
+}
+
+.section-header a {
+  text-decoration: none;
+  color: red;
+  font-size: 14px;
+}
+
+.products {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+  overflow-x: auto;
+}
+
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 180px;
+  position: relative;
+  box-shadow: 0 2px 5px gray;
+  flex-shrink: 0;
+ 
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.price {
+  margin-top: 5px;
+}
+
+.price .new {
+  color: green;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: red;
+  font-size: 12px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.chips-section {
+  padding: 20px;
+  
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  margin: 0;
+}
+
+
+.product-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+  overflow-x: auto;
+}
+
+.card {
+  min-width: 150px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 2px 4px grey;
+  text-align: center;
+}
+
+.card img {
+  width: 150px;
+  height: 120px;
+}
+
+.products-choco{
+    gap: 30px;
+    display: flex;
+    margin-left: 25px;
+    margin-top: 20px;
+}

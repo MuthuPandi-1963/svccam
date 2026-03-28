@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* QuestionsBar.css */
+.button-default {
+    width: 240px;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #0a80da; /* Teal 600 equivalent */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.button-correct {
+    background-color: #0f6939; /* Green 700 equivalent */
+}
+
+.button-wrong {
+    background-color: #cb2222; /* Red 700 equivalent */
+}
+
+.button-disabled {
+    cursor: not-allowed;
+}
